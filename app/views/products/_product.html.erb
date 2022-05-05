@@ -7,10 +7,13 @@
     </h1>
   <% end%>
   <div>
-    <span class="<%= class_names(soldout: product.quantity == 0) %>"> Sold Out </span>
+  <% if product.quantity == 0 %>
+  <span class='soldout'> Sold Out </span>
+  <% else %>  
     <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
     method: :post do %>
       <%= fa_icon "shopping-cart", text: 'Add' %> 
     <% end %>
+  <% end %>
   </div>
 </article>
