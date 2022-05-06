@@ -16,6 +16,10 @@
         </tr>
       </thead>
       <tbody>
+
+        <% @order.line_items.each do |item| %>
+          <%= render 'item' %>
+        <% end %>
       </tbody>
       <tfoot>
         <tr>
@@ -29,11 +33,5 @@
       </tfoot>
     </table>
   </div>
-
-  <div class="order-summary jumbotron">
-    <h4>Thank you for your order!</h4>
-  </div>
-
-  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 
 </section>

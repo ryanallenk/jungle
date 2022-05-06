@@ -1,25 +1,26 @@
-<%# ActiveRecord::Associations::CollectionProxy [#<LineItem id: 1, order_id: 1, product_id: 6, quantity: 1, item_price_cents: 2449, total_price_cents: 2449, created_at: "2022-05-05 15:47:31.163428000 +0000", updated_at: "2022-05-05 15:47:31.163428000 +0000">]> %>
+<%# # ORDER ITEM <Order id: 1, total_cents: 2449, created_at: "2022-05-05 15:47:31.148426000 +0000", updated_at: "2022-05-05 15:47:31.148426000 +0000", stripe_charge_id: "ch_3Kw6tqJPBCFSU9D21foGt8LL", email: "kvirani@gmail.com"> %>
 
-<%# #<Order id: 1, total_cents: 2449, created_at: "2022-05-05 15:47:31.148426000 +0000", updated_at: "2022-05-05 15:47:31.148426000 +0000", stripe_charge_id: "ch_3Kw6tqJPBCFSU9D21foGt8LL", email: "kvirani@gmail.com"> %>
+<%# LINE ITEM ActiveRecord::Associations::CollectionProxy [#<LineItem id: 1, order_id: 1, product_id: 6, quantity: 1, item_price_cents: 2449, total_price_cents: 2449, created_at: "2022-05-05 15:47:31.163428000 +0000", updated_at: "2022-05-05 15:47:31.163428000 +0000">]> %>
+
 
 <tr>
   <td>
-    <%= image_tag product.image.tiny.url %>
+    Image Placeholder
   </td>
   <td>
-    <h4><%= product.name %></h4>
+    <h4> Product Name Placeholder </h4>
     <br>
-    <p><%= product.description %></p>
+    <p> Description Placeholder </p>
   </td>
   <td>
-    <%= humanized_money_with_symbol product.price %>
+    Product Price Placeholder
   </td>
   <td>
     <div>
-    <%= quantity %>
+    Product Quantity Placeholder
     </div>
   </td>
   <td>
-    <%= humanized_money_with_symbol product.price * quantity %>
+    Total Price for Product Placeholder
   </td>
 </tr>
