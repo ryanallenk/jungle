@@ -2,6 +2,10 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## TO DO
+
+1. CSS styling for login / authentication features. 
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
