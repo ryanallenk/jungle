@@ -6,8 +6,8 @@ it "is valid" do
   @category = Category.new
   @category.name = "Test"
   @product.name = "Test"
-  @product.price_cents = 11822
-  @product.quantity = 5
+  @product.price_cents = 12999
+  @product.quantity = 4
   @product.category = @category
   expect(@product.valid?).to be true
 end
